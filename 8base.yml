@@ -1,0 +1,6 @@
+functions:
+  updateTaskByStatusFinished:
+    type: resolver
+    handler:
+      code: src/resolvers/updateTaskByStatusFinished/handler.ts
+    schema: src/resolvers/updateTaskByStatusFinished/schema.graphql

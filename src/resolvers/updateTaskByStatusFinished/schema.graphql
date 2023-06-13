@@ -1,0 +1,21 @@
+# This file was generated using 8base CLI.
+#
+# To learn more about writing custom GraphQL resolver types, visit
+# the 8base documentation at:
+#
+# https://docs.8base.com/8base-console/custom-functions/resolvers
+#
+ 
+type UpdateTaskByStatusFinishedResult {
+  result: Boolean!
+}
+
+extend type Mutation {
+  updateTaskByStatusFinished(
+    id: ID
+    description: String
+    status: String
+    responsibleIs: String
+    informerIs: String
+  ): UpdateTaskByStatusFinishedResult
+}
